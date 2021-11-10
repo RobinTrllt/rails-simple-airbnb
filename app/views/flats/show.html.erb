@@ -17,10 +17,11 @@
 
   <div class="buttons">
     <%= link_to "Edit this flat", edit_flat_path, class:'edit' %>
-    <%= link_to "Delete #{@flat.name}",
-                flat_path(@flat),
+          <%= link_to flat_path(@flat),
                 method: :delete,
-                data: { confirm: "Are you sure?" }, class:'remove'%>
+                data: { confirm: "Are you sure?" }, class:'remove' do %>
+                <i class="fas fa-trash-alt"></i>
+                <% end %>
     <%= link_to "Back to flats", flats_path, class:'back'%>
   </div>
 </div>

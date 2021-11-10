@@ -16,15 +16,18 @@
   gap: 10px;
 }
 
-img {
+.image {
   width: 350px;
   height: 200px;
+  background-image: url('https://source.unsplash.com/random');
   border-radius: 10px 10px 0px 0px;
+  background-size: cover;
+  background-position: center;
 }
 
 .flat-text {
   padding: 15px 20px 10px 20px;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(247, 247, 247);
   border-bottom: 1px solid rgb(204, 204, 204);
 }
 
