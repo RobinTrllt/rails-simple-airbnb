@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>All our flats (<%=Flat.count%>)</h1>
+
+  <div class="flats">
+    <% @flats.each do |flat| %>
+      <div class="flat">
+        <div class="image">
+        <img src="https://source.unsplash.com/random" alt="flat image">
+        </div>
+        <div class="flat-text">
+          <h2 class = "flat-name-one"><%= flat.name %></h2>
+          <p class = "flat-address"><%= flat.address %></p>
+          <p class = "flat-numbers">
+
+            <i class="fas fa-euro-sign" class="euro"></i>&nbsp<%= flat.price_per_night %>/night &nbsp
+            <i class="fas fa-user-friends" class="people"></i>&nbsp<%= flat.number_of_guests %>
+          </p>
+        </div>
+        <div class="buttons">
+          <%= link_to 'More info', flat_path(flat), class:'info'%>
+          <%= link_to 'Edit', edit_flat_path(flat), class:'edit'%>
+          <%= link_to 'Remove',
+                flat_path(flat),
+                method: :delete,
+                data: { confirm: "Are you sure?" }, class:'remove'%>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+@import "pages/show";
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+body {
+  margin: none;
+  background: linear-gradient(rgb(243, 243, 243), rgb(255, 255, 255));
+  height: 150vh;
+}
+
+.container {
+  width: 1300px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bolder;
+  margin-top: 20px;
+}

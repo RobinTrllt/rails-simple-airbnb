@@ -1,0 +1,60 @@
+// Import page-specific CSS files here.
+@import "home";
+
+.flat {
+  background-color: white;
+  margin: 10px 0px;
+  width: 350px;
+  height: 420px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+}
+
+.flats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+img {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.flat-text {
+  padding: 15px 20px 10px 20px;
+  background-color: rgb(242, 242, 242);
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.buttons {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.euro, .people{
+  margin: 0px 5px 0px 0px;
+}
+
+.flat-numbers {
+  font-size: 18px;
+}
+
+.remove {
+  color:rgb(163, 0, 0);
+}
+
+.edit {
+  color: orange;
+}
+
+.back {
+  color: black;
+}
+
+.info {
+  color:rgb(0, 72, 255)
+}
